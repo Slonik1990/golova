@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DemoSite</title>
-    <style>
+    <style >
         .layer {
             overflow: scroll; /* Добавляем полосы прокрутки */
             width: 100vw; /* Ширина блока */
@@ -12,10 +12,14 @@
             border: solid 1px black; /* Параметры рамки */
             border-radius: 10px;
             background-color: burlywood;
-            transition: 2s;
+            transition: 1s;
         }
         .layer:hover{
             background-color: blue;
+
+        }
+        .layer:active{
+            background-color: firebrick;
 
         }
         h1 {
@@ -27,7 +31,7 @@ background-color: coral;
     </style>
 </head>
 <body>
-<div class="layer">
+<div class="layer" contenteditable="true">
     <h1>Duis te feugifacilisi</h1>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
         nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
