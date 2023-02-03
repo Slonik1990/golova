@@ -3,56 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>DemoSite</title>
-    <style >
-        .layer {
-            overflow: scroll; /* Добавляем полосы прокрутки */
-            width: 100vw; /* Ширина блока */
-            height: 100vh; /* Высота блока */
-            padding: 35px; /* Поля вокруг текста */
-            border: solid 1px black; /* Параметры рамки */
-            border-radius: 10px;
-            background-color: burlywood;
-            transition: 1s;
-        }
-        .layer:hover{
-            background-color: blue;
+    <style>
 
+        form {
+            background-color: #85b4e8;
+            width: 100vw;
+            height: 100vh;
+            font-size: 20px;
         }
-        .layer:active{
-            background-color: firebrick;
 
+        .but{
+            background-color: coral;
+            width: 200px;
+            height: 50px;
+            margin-top: 50px;
         }
-        .layer:focus{
-            background-color: fuchsia;
 
-        }
-        h1 {
-            background-color: #ecb429;
-        }
-        p {
-background-color: coral;
-        }
     </style>
 </head>
 <body>
-<div class="layer">
-    <h1>Duis te feugifacilisi</h1>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
-        nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
-        Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit
-        lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
-        nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
-        Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit
-        lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
-        nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
-        Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit
-        lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
-        nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
-        Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit
-        lobortis nisl ut aliquip ex ea commodo consequat.</p>
-</div>
+<form method="post" action="https://webhook.site/4e0dfd34-8d43-4ce6-8e45-589e7115d763">
+    <table width="800">
+        <tr>
+            <td>Имя и Фамилия</td>
+            <td>
+                <input required type="text" name="firstName">
+            </td>
+        </tr>
+        <tr>
+            <td>Номер телефона</td>
+            <td>
+                <input type="tel" name="phone">
+            </td>
+        </tr>
+        <tr>
+            <td>Возраст</td>
+            <td>
+                <input type="number" name="age">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Дата рождения
+            </td>
+            <td>
+                <input type="date" name="birth">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Какие у вас домашние животные
+            </td>
+            <td>
+                <input type="checkbox" name="animal1" value="cat"> Кот
+                <input type="checkbox" name="animal2" value="dog"> Собака
+                <input type="checkbox" name="animal3" value="snake"> Змея
+                <input type="checkbox" name="animal4" value="spider"> Паук
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ваш пол
+            </td>
+            <td>
+                <input type="radio" name="gender" value="male" id="male"> <label for="male">Мужской</label>
+                <input type="radio" name="gender" value="female" id="female"> <label for="female">Женский</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ваш люимый цвет
+            </td>
+            <td>
+                <input type="color" name="color">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Где вы были в отпуске
+            </td>
+            <td>
+                <select name="trip" id="">
+                    <option value="Egip">Египет</option>
+                    <option value="Turc">Турция</option>
+                    <option value="Domin">Доминикана</option>
+                </select>
+            </td>
+        <tr>
+            <td>
+                Комментарий
+            </td>
+            <td>
+                <textarea name="comment" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+    </table>
+    <input class="but" type="submit">
+    <input class="but" type="reset" value="Сбросить">
+</form>
 </body>
 </html>
